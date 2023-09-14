@@ -1,0 +1,504 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Rel_Portal_Aplicacoes" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1400,837" sap2010:WorkflowViewState.IdRef="Rel_Portal_Aplicacoes_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:unaa="clr-namespace:UiPathTeam.NextWorkingDay.Activities.Activities;assembly=UiPathTeam.NextWorkingDay.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="70">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="Rel_Portal_Aplicacoes" sap:VirtualizedContainerService.HintSize="1079,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="strDataOntem" />
+      <Variable x:TypeArguments="s:DateTime" Name="DataOntem" />
+      <Variable x:TypeArguments="si:FileInfo" Name="arqInfo" />
+      <Variable x:TypeArguments="x:Boolean" Name="bRelVazio" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,97.5</av:PointCollection>
+        <x:Double x:Key="Width">1045</x:Double>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID4</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,414.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: TIBCO Jaspersoft: Login" sap:VirtualizedContainerService.HintSize="1256,5328" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1222,5112" sap2010:WorkflowViewState.IdRef="Sequence_50">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="usuario" />
+                <Variable x:TypeArguments="ss:SecureString" Name="senha" />
+                <Variable x:TypeArguments="si:FileInfo" Name="teste" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="luciana_compe" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1180,180" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4" Password="[senha]" Username="[usuario]" />
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID do usuário'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1180,216" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Text="[usuario]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/login.html" DesignTimeRectangle="743, 343, 302, 28" ElementType="InputBox" FriendlyName="'INPUT j_username'" FullSelectorArgument="&lt;webctrl aaname='                     ID do usuário:                 ' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                     ID do usuário:                 ' tag='INPUT' type='text' class='stdnavinitialfocus subfocus' /&gt;" Guid="3f93b055-de41-4400-96d9-8772702c6af9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATIAAAAgCAYAAACRr/ThAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACrSURBVHhe7dSxCcQwAARB9V+gynCoyOCPbPhA4NALM3DR5TsugDghA/KekM05zcxSu/2F7DgOM7PEtiFba5mZJbYN2XmeZmaJbUMGUCFkQJ6QAXlCBuS9DtkYzw3wKUIG5AkZkCdkQJ6QAXlCBuQJGZAnZECekAF5QgbkCRmQJ2RAnpABea9DBvBVQgbkCRmQJ2RAnpABeUIG5G1DZmZW2u0JGUCVkAFx1/UDQj+nzqcJcxcAAAAASUVORK5CYII=" InformativeScreenshot="1d1efa2ca74e34d5e7e1931324cec932.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="743, 320, 302, 22" ElementType="Text" FriendlyName="'ID do usuário'" FullSelectorArgument="&lt;webctrl aaname='                                      ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                      ' tag='LABEL' type='' class='control input text' check:innerText='ID do usuário:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATIAAAAaCAYAAAA0TtAqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPWSURBVHhe7drBS9tQHAfwHf0vvHr0JjsJPVUQFGHoaSB46E0RRYt0QxxYEEYGE9FDxSEYpEKFjYIwKgjOSyGD0UJBOlBKBWGi0CAVvvsleamxtlmVbTbb9wMBX957SSb45ffe2zMQEQUcg4yIAo9BRkSBxyAjosBjkBFR4DHIiCjwGGREFHgMMiIKvP8qyMy8jsHQAvSSukFE/4TbIDMS6Hgew/p3q3GO1NyEtL3XFHrnU8hX7NH+zvYwLHNmDqvqxtMrfl5G78gy1o1zdaeZHOKhCQzunKo2EbW7JkFWhj4p4bX0BabdKdVM6QAzQ3fvNdWGQWaeFFC8Ug1fFRSNLDLHl6pNRO2u5SCzFHcXZMwqMtfqhquSw8r0FDrdyu2l87MbZGY+icjIlPRZ/RPojug4alDZHb2X/tEUiqrt/aby/ioG+5z5boUY3sjZw3znSSUWVt9jzwtNYWZfhZQduDFoexnEZ6Poer4I/ewr4jIuvK2eZv3b7D5nfufAAjSjlbKUiP6WBwWZM2YB6yeqrRS3Y+gYWkX6zAquKsxvSYTlj94OsussXltLtUQOFzfSfVPEypg8e/4AF/bsW80DSZa60xIumwXVcZdfkOG6gouKWxlWYaxF0dGvw7CaqnLsGteRypdhWt8Hb5BVkXkrzx6T8XY1V0V+ywpzDWlplw+T0NKFX1eoRPRHPSLI3DGuS6Rfydg3nrHepWVBR4/MWTlWfcKp7BI4Um1X80BS75hMwji7Xw35Blmd8sdF6VNVZcMlsDfICtBkOR3eqj0ZKH2y58QlCY01ee+Y571E9CR+Q0XWYKw3IBqEyp0w8fANpPMsVuYX0WsvL2X5Op5ARu3b+80zj61lYwzhUXUNWPNbDbK6Zaal4RwiekoP3yML1QdQKxVZ9H5FNiQV2UOCzMO8OkV6SZaIk3vypX7znCVpx1zGWdaKx1RkvfcqsqhUZAwyonbRcpC5p5Y9cq9+b6u4Yy0Vl+19I1yXkX4Xu93sV3tkPWvOxry7R9bZYI/MXqr1f4AhoWOWstDGrQOC+0Fm71VtxmrLuubzVJDNSpDJOKsvHpF2y0Gm9sheOM+u7ZGFNKR/yG+Je2REbcE/yOQPunb1RTG8lELD/4ZlnezZ4eGc6s3sJDEh4eUGxN1TS1kWzuo4avSc0h4i6mSyO7KK9d0Ewuqb7KrL/Rb1nviheojPPNPQa6ed3dMJ6BuahGyrQSbqTi27RpagZZ33co+MqD3cBhkRUUAxyIgo8BhkRBR4DDIiCjwGGREFHoOMiAKPQUZEgVcLslwux4sXL16BuhzATwbLPO5m0c1/AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1180,241" sap2010:WorkflowViewState.IdRef="NTypeInto_14" IsPassword="True" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" SecureText="[senha]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/login.html" DesignTimeRectangle="743, 410, 302, 28" ElementType="InputBoxPassword" FriendlyName="'INPUT j_password_pseudo'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='' aaname='                                                                                                        Senha:                                                               ' /&gt;" Guid="c30eb310-1401-47e9-a8d7-4ba1d5132f7c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATIAAAAgCAYAAACRr/ThAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACfSURBVHhe7dSxCcQwAMDA339Aj+HSlcFfJZDCAwjuQCvodwDijAzIe0c2xpCkVI/PyOackpToOrK1liQluo5s7y1Jia4jA6gwMiDPyIA8IwPyjAzIMzIgz8iAPCMD8owMyDMyIM/IgDwjA/KMDMgzMiDPyIA8IwPyjAzIMzIgz8iAPCMD8owMyDMyIM/IgLzryCSp1OMdGUCVkQFx5/wBqOfOp6IwfOkAAAAASUVORK5CYII=" InformativeScreenshot="fa396db276aa6d338bc65132c097d9cb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="743, 387, 302, 22" ElementType="Text" FriendlyName="'Senha'" FullSelectorArgument="&lt;webctrl aaname='                                      ' idx='2' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                      ' type='' tag='LABEL' class='control input password' check:innerText='Senha:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATIAAAAaCAYAAAA0TtAqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKdSURBVHhe7dqxSxthHIfxjv4XWR3dSibXOOkWoWARHIQuQQJphijFgoLLDRWxQ4UiNBSFDJZAQOpUdRBSkAQKJYIiEQTFQoIY+PaXu0tytFrSxg4vPB94Ibn37saH932TJwIAxxEyAM4jZACcR8gAOI+QAXAeIQPgPEIGwHmEDIDzCBkA53VD1jwpKTObViye0lA4RqY85c/DG/7RwRt713RBtfA7ADy2MGQ3Ks5bcOa2VP0RXHkshAzA/xaGrK78nAVnZV/N4MIv7lQrrmtiPFipDcXTGn1VUq1lUxclJeM5eXv78l5mNRzOLxw2/Cf9kD1b18Z27/nYCwtb+1lVtDad0+hY570pDc8UVPbnAKA/3a1ldTNrIVnU8uGZrm/Dix2nBU3Es8rsXQbfzz9ZvFKaLd2EIbM4Ta1qo1xXs9VQ8bVFyYLUXoX5IbOwJd/tq3p1J33fUsLuXzi0zxbI5lXDnvHfKl2WNNt57+035d9u6fNFOAcAD+gd9rcudbDpKTmZDlZN44vK7NT8Fdr1rmfXVlUMFll275EW7J6J7bNuyDJf2mEKRLeTv20t77m/56uWbS7x0e62qD23z0HwAOBhvZBF3TZU21vX0zA49Z0lP24jUzklbCuYsNjFxj3lTywyg4SsE8/2O/0RbE39kAFAn+4Pma+3OgpWZJ4KV+FU1CAhO36vWPt87biz1IusyACgTw+H7DRyDuafkdlW8kMkMK274Gxr4JClLWR2vXWj8s6qRjsh44wMQJ+6IfODYxHpjrGskislVcPFUm03+qtlSsOTS1o7thgNErJWXYX58L9rYzmlNgtanuGMDMDf+cPWEgDcQMgAOI+QAXAeIQPgPEIGwHmEDIDzCBkA53VDVqlUGAwGw6kRkH4CGg89XVQoLtgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="1180,156" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/login.html" DesignTimeRectangle="744, 483, 285, 28" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' type='' tag='SPAN' class='wrap' check:innerText='Login' /&gt;" Guid="c7cf48c2-42e0-4f2f-8df3-1fb76dc7f958" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASEAAAAgCAYAAABdNs4KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKCSURBVHhe7dnBahpRGIbhXkLvxDtor0LIBbjNQih00527kEVXbtpNXAUCLmQ2NWRhi0glUiwtomIYaFEMDQkdLErFr+c4jh3UsYvGHhrfHx7QOeO4GV6O4yMxDMM4HCLEMIzTWUbo6cljAPjniBAAp4gQAKeIEACniBAAp4gQAKeIEACniBAAp4gQAKeIEBLlB3fmzvB1Xty8/je8W3vXteVtWMN+IUJItMsIHXXr8r+VlN/BtfF/IUJItMsIAREihETbI5RWcThUMAvvHzuTUV3Fi3D94LKs/mSxEJ+pr0p15drd9vx1rVWWPx7PT5PG8rvple/EQ0SEkGhbhLJXvlkzoegdKmvWM9Uz+VNzKCgpe5JR7Yd5PSrryAvPz3xuyjap0wrfr0fIjAlUo2Wu5z1Tw35+UlE+9p14mIgQEm2L0OmNWfrZ1GlsrXBtdjGzpopRhCZ1FeYRSinXs9GyEUrNz12P0J0al7+v5dllIrQXiBASbYvQpkjEzz94X1Fgb6xopne6Gb5SbnEtIoQIEUKiP+6EpmYnFDu23AmZ83NfhmanVNfr2HocEUKECCHRy74twVC1avgTKi58JiT1rw6VMe/jz4Se2/VOe/4MSLOxgqCtzqAk72N4rv08EUKECCHZRUH+hn+4br6+MOvr/44F9t+xtzZYaXm3Zlc0ruu8c6bKoCk/sFUxXbk+nl+bCCFChHD/Fs+D+r0nseMpnX83BwkLVhAh3L93ZdlHRoHZ9di/7+2xgzfH+mR3VaPw59raZ7C3iBB2IKW831ZgnxHFZjJuq/IhvjsCiBAAx4gQAKeIEACniBAAp4gQAKeIEACnlhFiGIZxMUSIYRiHI/0C81PB2Ok8+nwAAAAASUVORK5CYII=" InformativeScreenshot="39c6a0bcd57970ec892b22e792059c6e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="744, 483, 300, 28" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='button action primary up' aaname='                 Login                              ' check:innerText='Login' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAgCAYAAACVWiTcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVHhe7drBahpBHMfxPkLfxDdonyKQB/Cag1DopbfcQg49eWkvySkQ8BD2UkMOtgSpJBRLS9CQsNBiMDQkdDEolfw64/pPl+gaWvUw5fuDD+jO7HhZfoyjT0QIIYGGAiOEBJv7Anu+9RQAgmChwAAEx0KBAQiOhQIDEBwLBQYgOBYKDEBwLBQYgOBYKDAAwbFQYACCY6HAkKt8ceOejFj7lenj84iu/VPXUjRlDHiMhQJDrmUW2MZpQ/GPPZWXsDb+fxYKDLmWWWDAPCwUGHLNLrAVVbpdJXfp8+Mz6DVUOUjHV4+q6gzGA9kMY9UOH6x92hq9rp9UFff7o2lSX/HpyoPPBFIWCgy5ZhVY6Tx2Y65kztZUcuPFw13FQ3cp2VNpq6j6rXvdq2ojSucXvzbl+6x9kr6fLDAXV27HJ2696IWO/f2DmsqZzwSMhQJDrlkFtnPlhn41tZMZ2750u6e7pipWYIOGtkcFVtD6mS88X2CF0dzJArvR8dGftSI/TIEhh4UCQ65ZBTatYLLzVz/WlPgHyzK80VX3jdbHa1FgmIeFAkOuR3dgQ7cDy1y734G5+evfum6H1tDbzHgWBYZ5WCgw5Hrd8S3SVf0w/dqXlZ6BSZ3zNRXd++wZ2Es/3m6Nzrx011eStNS+2FP0OZ3r76fAMA8LBYZ8B9uKp/ySePX9lRuf/BUy8b9Cvvdlt6Lo2u3G+g3tt3dVu2gqTnwjuU663BytTYFhHhYKDIs3Pv/qnD3LXC9o/6e7SClhASwUGBbvQ1X+iCxxuy3/Fwt/bfXdpr743Vwv/Yo5cQ/wFywUGJagoHLcUuLPxDIZ9FuqfcruyoB/Y6HAAATHQoEBCI6FAgMQHAsFBiA4FgoMQHAsFBiA4FjuC4wQQkILBUYICTTSb+T1UCdtk50jAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Relatórios'" sap:VirtualizedContainerService.HintSize="1180,466" sap2010:WorkflowViewState.IdRef="NCheckState_23" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Timeout="30" Version="V1">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Double" DisplayName="Click 'Relatórios'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=searchFlow" DesignTimeRectangle="30, 251, 176, 26" ElementType="Text" FriendlyName="'Relatórios'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;p' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='wrap button draggable' aaname='Relatórios' check:innerText='Relatórios' /&gt;" Guid="62175821-d60f-4b12-881b-7ad353f2187f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALQAAAAeCAYAAACFSjS6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQFSURBVHhe7ZjBa9t2FMd7Geyyf2WX/Q86CYIgMxRqUhClZSDWQy7JRqBDKxR3BEOMoSEQdBih9rEQxAqh+JAqWzeX4VEUCApp8QpixdTDx+/eTz8plrWf7chOaiKe4QPS7z096fD5PT/pxlc/fAGGue6cnZ1B/FhophCcCz0YDMAw1x0WmikULDRTKFhoplCw0EyhuHKhPys3Rrhdf6nMY5jL4JMLLfjp2V/KXIaZl4UILfh29zdsPH09FVXNRRMeVmHaBwgVMWaxLEzoi6KqKQnQtDRoWoIO83sH7VCVm+K0CUurwlPFLsJJE6vf1Kbcp4fWYx1Gva2IMVdJLqG/+yVQrk9CJWkeVDUlUujqYXze78Krm9A3vUxehosK/ZbyrCaC7PpxG51pm4ZZGLmF/vqpjw8f/1XGVfzx7uNcqGpKMkILaBTQEglJ8NaWBUPXoC9b2H4VypyM0MGLGlZLetThjTW6tk/rR0047jblye5vNcRGDtFp2DCXaE03YO14CEVuUtPaQ2t/A2WK1doDeJvJdRRPPYu2ZMJ+5st1wYmLjVvy/qbd5M0yJ7mFvvHgV3xZ/xPe6QdlThaRPw+qmpKM0L0A7sMSSvHfvP+zidJmS0p3vAdrycbBP3ScEbp74qMXi9l5Usb6fix+enMQ4XMburWNzns67/vYu68PhRU1dTrf6ZxLnhba3zVh2K7cLO9bqN406Ll7FAvhrhmovJD3DA49mSNqMjMxk9CCz398Bef3v5V5adJyzoKqpuT/M/S9xy78SAgfzkoscJzfeqSjekTH2ZGjH8BrVLC6UoIu6iQjy4jQQjwN9nMhYXzdGwflFQe+OI5qVtBKyTgUuo3achnOm2GsR5tDo5fKHs3aBw9pI+y20WWRL4WZhU6YNldn8/OiqilJdeg+SXPTTEnjoXou+pAoNy206LR3DdzbctE57cFvWGOEFvcysXcsjmPSdbKbhBgKLZ7FHpF9dDQK0NpZh7lMY8xWi8Wek2vfoZORo7u/Dn3NRTeKkUT6aIc+Jy1fu0ajgOiUMhakhT6q0oiRp0OPE3pShx6uDfoh/YsYw5GHmYnizNDUbZ07peiFTJy36zRP0wwddbx+D8FJV+Zlhb5Dc7HI6Xqo3aWXs0RokbdMedH1F5ihxwo9YYam7uzu0ItgVJOFvgxyC533K4dK0jyoakoyQhNSuuSvPP1loYTVLS/u3h04t5JvxCTUgzLNznR+fxvefmUo9KCLg0cyVnoicqd85Zgg9KSvHL5boY2TfOWIpY9jTH5yC61an4RK0jyoajLMOHIJPQsqSfOgqskw47hyoRnmU8JCM4WChWYKBQvNFAoWmikULDRTKFhoplCw0EyhYKGZQiGFBv4DcsaVZ2U0PC0AAAAASUVORK5CYII=" InformativeScreenshot="4f0f59f2208e4323aceea0e559ef988f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Procurar repositório' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=searchFlow" DesignTimeRectangle="44, 308, 265, 39" ElementType="Text" FriendlyName="'Relatórios'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;p' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='wrap button draggable' aaname='Relatórios' check:innerText='Relatórios' /&gt;" Guid="2b67c7e1-2670-404e-830f-d55fef510d6b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQ0AAAArCAYAAABikN2XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYoSURBVHhe7ZtfaFtVHMd9EXyZr74o+CZo0cF8cw8KuqcExeLL/D8VC4WiFAU7GRJBl6JESlRK6EPXOdpUxzocpZRiKWM2ga0NczSlNC3b+o9mrM0oIYTw9Zxzb9Kb5KS5t0nKbfo98Hm45++9Kedzz/nd08fS6TQIIaQa9+7dg0yUBiHEFpQGIcQRZdI44TtGCCEVoTQIIY6gNAghjqA0CCGOoDQIIY6gNAghjqA0CCGOcI00nv7iPTz+/nAZT3zYj+e/fUHbhhBy8LheGhIpjhfPPattRwg5WA6FNCRPfvIzjn/3lLYtIeTgODTSkEhxPPfNy/ui+VcqLQjEwggEdWWE1I9DJY1akP3rxm0WOmbiyIg/ZGajFx9rygmpF5RGw+lCNC1+4fQkAtry2vGOTyIlhbE95mCl0YKBVXVjSNz0aMoJ0VOTNN4IHNfm7wfXSGPMmIBlKZtGanMMA5db9O0qUos0zLab/Zoyk75eJLJCGA9G4He0NaE0yP6oSRpv/nYKXdd6tWVO+exSDz66cKlhyP5145ZhSiO11LWbF/Tgq4kwEnKOZeO4ctFSvyoNloaY/GfHu3CWsQxyQNQsjT/+28JPUxN4PfCSto5d2ofPqb4ahexfN24ZOmmYeG/MqrhBcv5MWVllGi0NQg6WukhD0ndrGe+E3tbWs8Nrv/+At/5Cw5D968YtYw9paMtCnRhdXUcmp35HsRLZQiLWidOFdjppnITv+ghiD7eQEVuLfEptjuDXkFHHfyeC6PQIVswyI20hOpbv4xg6bowhsSM7N1JqexajoycL5YqZuCgRq6PBHkTFeCqZ9xJYktfFfUps9RsUz70h7j//3Dlz+zZoqUOakrpJI8/ng19r61bjMEjDG51VP9bKbTMGMNiv4gl4FMHQVTmpxFZhOmK0X8y310mjFRMPgczDSQz97YFXtGubMsaVq4q2fL1g2JCGZqWR/1qSvNtjbE1C7Ri6LyWQRmKmdbeukoYYK5tGcqEbbZZtjE4a9vr14MqmyMotY0LJRNz/uNi+bUs57fZFmpO6S0OynziHq6UR9MAXnURSCmJHTH418VowsCZskJvFUEk8wbewrvIH1LV+e+INnRSy2L2W/Q2tyT+FmIiFmImQkswqlcZFUyYPwuiw5vvacf2RyM+KsfP3ZEoDa70l42mkYbvfXiTkCoPbpiNJQ6QhkXGOU7+c0LbT4TZplCWx/E6uhuE3tw8nfD2Iy4mzpgmwqoman4z2Yxrlb369NNruLMtc8eYv/5KTL4tPm3mmNBIzxfUkpePZ79eD0QfyqnQrRo4CDZPGB/2fattUwrUrjWA3YurUVAR9RSsKc0JXTNWl4b3QhaGFiFjWW2Mb1aVRKRahMCWRWuwsurYjDUf9DvYiLp9LppyQx1K/Raikmam7NIL/3oIn+Kq2/l64VhqCNnPCJOfbLXXNCb1RbYmuk0YLAvPLxgnOR3FEY93w/+mxvdJwhTQURkA3vm3aI7uO6+NOz7GQw0ZdpfH9+DBeOf+Mtm413CyNwsTPWc9o2N12aOr9E1HCkGNY4wx2pVHYRtzczSstq2l7YqffEk6LZ1LbOnGvpbET0lzUTRpfXv5RW8cu7paG2EpMG2c0Mve7C5PCN78uctKITe31di2Xhn9R/0a3K41CwFLkF760KCoHQu1Iw0m/3mDpM5vPuTMJf1E+aTbqIg2n8QsdbpdGYeJALMGvmnlBMVHUZFpHNNpuBARD7eibiyMxl9/KdCK6I+pYVxrmIbHUquWz5tK6yiuWxhlMbIusbByj8vh6qBUdZtzA+DSaRnLJ3idXW9IQ2Or36hiSuTRWFrrhU/cjtikx81Nt0RaONCM1S2M/8Qsd7peGeLtOGduKojdx8AwGlpaRshzSyuzElUTy7Xy3jfiF/JRp/AdqCwJ34khZDoSt3A3Dr85qFE9i77UwElI6MomJmrj9bqHM/uEu+9KQVO1XPHPfXAQrljrqUNucj19SjgA1SaOeuEYahJA9oTQIIY5wjTQIIYcDSoMQ4ghKgxDiCEqDEOIISoMQ4ghKgxDiCEqDEOIISoMQ4ghKgxDiCEqDEOIISoMQ4ogyaRBCyF4Y0gD+B+JDAzayRhVgAAAAAElFTkSuQmCC" InformativeScreenshot="bcb4202284e75c6a75f47c19a3db53da.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Procurar repositório' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ClickType="Double" DisplayName="Click 'Cheques'" sap:VirtualizedContainerService.HintSize="1180,156" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=searchFlow" DesignTimeRectangle="52, 355, 154, 26" ElementType="Text" FriendlyName="'Cheques'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;p' idx='4' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='wrap button draggable' tag='P' aaname='Cheques' check:innerText='Cheques' /&gt;" Guid="5f43342f-9b43-4840-a558-1cc8ff8d897b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAeCAYAAADdNaejAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOPSURBVHhe7ZhNSxtRFIbdFPpr+jNmNSADNuAiWAxFKQzNopumIAjTRQhFBgwuQkGyKH4EF1IIoQuRCHZsbVOkJYwgI1qmhUEJpmT59t75MJN4qxltMoacwAOZe86cBObJufdkrNVqgSAGxcnJCfiLxCMGColHxAKJR8QCiUfEAolHxAKJR8RC38V7kFzv4MnSR2EeMVoMXDzOm/c/hLnE6BCLeJzny58xt/btRkQ1ieEnNvF6RVQzjLWdhzohQ5IkyNMaNg/99XUV0oJxJZ+4H0QS79UHS7h+HSKZoiCqGWBtqJBndFSPvetGfROFsvcdSbz7TWTxHq+ZOL/4I4yL+Prz4k6Iaro0a8hPpFCsC2IMV7zsJqqLs5B5N3xWRO0siDv4vq4hNS5BGk9B82V1Od1Cbpp3UBnJ+RIKcypKvtjGggR9N6jRdd202WepUGT2WRMqCvuOv26hMp/0vgPryKUDf33EiSze2PwnPFo6gHF8LszphuffBVFNl3oRyakiTFGM4YonqyjyB910UNFkZMreQ29saZDTKzCbLPd3FfpkCit8i+YyT8pQV00vr15ChknUi3jmuxQSC1U4vObhCtRxDVtMdKecgZL1148NGEft+0eZW4nHefh6H8Uvv4R5YcIS3QZRTZddHZJagiWKMbq3Wn6trvPO1sCWluzolNbqLNQNG61aHkqHzBZKai/imShOeaIFsWpWhr4XSM66rd2OEXcQL+Cmc193flRENV166XhC8bhMbItlW18YN8ZlZt2pXadX8QzoXfU4Qa61XUBmWoGSzqN62r5/lBnejtdkD1u+4YwnFM9GKd3Z8S7Z09mwshLqolfFC7ZrTjUbEk/u7HginO0clJcVOILYqDG8ZzyGN9XmYfjbGJ9q57RN2Dz2T/FasNm5yz3jNbyYfWh5MpwxgSYS0Hc8uezdPGbZOTEQz1xOeuc19t7Z0ZFkg0TQ1WpLCfeMZ/OzXLMB64ht3WzdKhcuBwoSr01k8aJOtSKZoiCqGcas5Pz/8WQoT9tT43XidUy1soKUVoLpdytnv+DVY+vqWzbVzrTFazkG8nzidWM1VMJbb2iqlcYTeLFouD+A1mEFubRyOdVWaLhwiSyeaP06RDJFQVRzcHRutcT/I5J4t0EkUxRENQcHidcv+i7ecEPi9QsSj4gFEo+IBRKPiAUSj4gFEo+IBRKPiAUSj4gFEo+IBU884C8+EMO8rMMPxwAAAABJRU5ErkJggg==" InformativeScreenshot="926abe5b0eba11b2dccdfc9660f45d77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Procurar repositório' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Cheques Sicredi'" sap:VirtualizedContainerService.HintSize="1180,156" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=searchFlow" DesignTimeRectangle="384, 481, 386, 20" ElementType="Text" FriendlyName="'Cheques Sicredi'" FullSelectorArgument="&lt;webctrl aaname='Cheques Sicredi Compensados/Criticados' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cheques Sicredi Compensados/Criticados' tag='A' type='' class='' check:innerText='Cheques Sicredi Compensados/Criticados' /&gt;" Guid="fe438d3d-e2dc-4301-ac5a-1b78a9ddc112" ImageBase64="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" InformativeScreenshot="1915714a556d0db3a8fec3514d0b1854.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Procurar repositório' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'SPAN'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="1180,755" sap2010:WorkflowViewState.IdRef="NCheckState_19" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Timeout="50" Version="V1">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="480,539" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,383" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="321, 388, 50, 40" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='jr-mSingleselect-input-expander jr' aaname='' /&gt;" Guid="dfbe9c9c-2691-4ca5-8de8-3959170aadf9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAsCAYAAAAuCEsgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG2SURBVGhD7ZbNqwFRGIfvvy35XEkkZTY2UoqlsFB2FuzIgpUIC1I+FshXfrffYep2m1vTGIcz9zz19jbNees8vec9M1/wKN4VGwwG8FKYeKpjWkw1tJhqaDHV0GKqocVUQ4uphhZzwu12w/F4xH6/x263sx1czzrWO+WlYtzccDhEt9tFu922HVzPOtY7RYpYvV5HNpu1HVz/0WLn8xnz+RzVahWRSAR+vx8+n+/P4PtwOIxKpSLqWO+Ul88YN9fv91EsFhGNRi2FzKB8Pp9Hr9cTdR87Yybr9RqdTgeZTAahUMhSKhAIIJVKodVqYblcPiqdI0WMbDYblMtlJBIJS7FYLCa6ulgscL1eH1XOkSbGi2A0GqFUKlmKFQoFsZnD4fDUETSRJsYu8BvFo2YYBoLBoBBiTqfTaDab2G63rnSLSBMzmc1maDQaiMfjYq54BGu1Gsbj8WOFO0gXO51OmE6nyOVySCaTIk8mk6e+WVZIFyM8kvzDYOeY+ew2bxHjHK1WK3GtM7s1Vz95ixhvPcpcLheR3bgFf/MWMRloMdXQYqqhxVRDi6mGFlON/yHGBy/FHeAblWg5zWjghbIAAAAASUVORK5CYII=" InformativeScreenshot="312b9e9c1e4a3240a871917539ed337b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,312" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                              <uix:NClick ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_45" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="321, 388, 50, 40" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='jr-mSingleselect-input-expander jr' aaname='' /&gt;" Guid="dfbe9c9c-2691-4ca5-8de8-3959170aadf9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAsCAYAAAAuCEsgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG2SURBVGhD7ZbNqwFRGIfvvy35XEkkZTY2UoqlsFB2FuzIgpUIC1I+FshXfrffYep2m1vTGIcz9zz19jbNees8vec9M1/wKN4VGwwG8FKYeKpjWkw1tJhqaDHV0GKqocVUQ4uphhZzwu12w/F4xH6/x263sx1czzrWO+WlYtzccDhEt9tFu922HVzPOtY7RYpYvV5HNpu1HVz/0WLn8xnz+RzVahWRSAR+vx8+n+/P4PtwOIxKpSLqWO+Ul88YN9fv91EsFhGNRi2FzKB8Pp9Hr9cTdR87Yybr9RqdTgeZTAahUMhSKhAIIJVKodVqYblcPiqdI0WMbDYblMtlJBIJS7FYLCa6ulgscL1eH1XOkSbGi2A0GqFUKlmKFQoFsZnD4fDUETSRJsYu8BvFo2YYBoLBoBBiTqfTaDab2G63rnSLSBMzmc1maDQaiMfjYq54BGu1Gsbj8WOFO0gXO51OmE6nyOVySCaTIk8mk6e+WVZIFyM8kvzDYOeY+ew2bxHjHK1WK3GtM7s1Vz95ixhvPcpcLheR3bgFf/MWMRloMdXQYqqhxVRDi6mGFlON/yHGBy/FHeAblWg5zWjghbIAAAAASUVORK5CYII=" InformativeScreenshot="312b9e9c1e4a3240a871917539ed337b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="932, 611, 56, 60" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='SPAN' class='jr-mInstructor-icon jr-mIcon jr-mIconXLarge jr-message jr' aaname='' /&gt;" Guid="41417566-6212-4ba2-972c-6d8a6b5954f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAABACAYAAABGHBTIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH0SURBVGhD7dq/a8JAFMDx/rUiZJASKEhBCIJLO2QQQQpSVOrioGMrYgcdgtwoWYLpYJcMoQQk46tJE3vY1xDw8sPzDZ+h8C7XL8RLWrzxfR+uCQXLjoJlR8Gyo2DZUbDsKJjnrMfQfepelPHaQVtiicH2pAGVSuWiNCY22hKjYB4frM8dcJySmuvig9sGPlMKRpuC/0PBPApGZgKeixwkorkeunco72Cj8zOTqY6B7h2iYGQmIiTYmuGveULNLHTvEB1ayEyEgnl0SyMzATqls1CmYMdcwnKVMTPhD3s6tJCZCAXz0gazvgrqXcb6DN07RIcWMhOhYB59hpGZUqBgZCZCwbyrDm4Nkde9PxjYX/i1jhwLGLr2DMOW+OB0GjD9wK8V8KwpaAq2TpzSBLusB/Uqtkass4K9LcNvoRODVrwhHrx716HG/VJKcwAL5DoisG3Cv3MPEoPT+n3TOg32wJpooHCxansBuz0/k6/sgvcOsOf6MTSgvZjgnqzNWzbBexveHmpcbA0eX5M/W3kRH7wxYaTFPx9UVeiukr+GkCfBwYcDiX/sKBqMNi66pijCg49udVh84vNFyib4vgfMxWeLJv6Wbk7B8vC5MhAaXPQzNg1hwWV4xqYhJNjeluMZm4aQ4EtCwbKjYNlRsOwoWG4+fAPDdharHWeXfwAAAABJRU5ErkJggg==" InformativeScreenshot="70c39c8925f7792b5f00edceef44ba4b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1180,383" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch.Try>
+                  <uix:NClick ClickType="Single" DisplayName="Click '0821'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="53, 522, 307, 25" ElementType="Text" FriendlyName="'0821'" FullSelectorArgument="&lt;webctrl aaname='0821' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='0821' tag='A' type='' class='jr-mSelectlist-item-text jr' check:innerText='0821' /&gt;" Guid="0e069597-42fb-44b2-9b2b-646139bf6643" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATcAAAAdCAYAAADPYivWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG9SURBVHhe7do9jsIwEEDhPUJutBfjHPTLGbgANeIAiIYubSQqKm9M/O9xiOJu9Cx9jTGhe5ok/Pz+DQYAtCFuAFQibgBUIm4AVCJuAFQibgBUIm4AVCJuAFQibgBUIm4AVKrj9ribfE3mdi3OfJzM050I630xx+rcwdze7vOw7uZcnUst33mNB+EzAPguj5sL2/MR947jNO8UgbtezMsenE5xL0QsDZe0N5izvWQzmv43iRuA/ZK4uRBlwZL3lzgJ05eLXozS/N2xvJ7lpr7it5brxkXcAOwV41aFKSpj1py8Vq6Rk+MWbL4OAMhi3IRbUq+6NfW3pfNKzzcnupL7rWa8iBuATvvi9uGfpyWrNYll/Pfaz9yIG4BeXZNbiE8yyclvTCP/XG01XMQNQKcdcXOTlxQxd43WBLcpbBZxA9BpxwuFtZcB7jMhfJvDZhE3AJ1i3IS/fMj7K5ObGD7/jE2eCkXEDUCnJG4z4dZUfJkg3n76iKVnpb0NiBuATnncLB+usFp/7XBTWrrKac5Fqr3y6Plb13pt+HsJACTquAGAAsQNgErEDYBKxA2ASsQNgErEDYBKxA2AQoP5B8iSjyFNM+vCAAAAAElFTkSuQmCC" InformativeScreenshot="ebc08de1f713090a9f5ee806769d7a0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,312" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                        <uix:NClick ClickType="Single" DisplayName="Click '0821'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_44" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FDevolu%C3%A7%C3%A3o_de_Cheques_Depositados&amp;standAlone=true" DesignTimeRectangle="53, 522, 307, 25" ElementType="Text" FriendlyName="'0821'" FullSelectorArgument="&lt;webctrl aaname='0821' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='0821' tag='A' type='' class='jr-mSelectlist-item-text jr' check:innerText='0821' /&gt;" Guid="a08d3c20-5091-46a2-9bc8-04519a63f498" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATcAAAAdCAYAAADPYivWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG9SURBVHhe7do9jsIwEEDhPUJutBfjHPTLGbgANeIAiIYubSQqKm9M/O9xiOJu9Cx9jTGhe5ok/Pz+DQYAtCFuAFQibgBUIm4AVCJuAFQibgBUIm4AVCJuAFQibgBUIm4AVKrj9ribfE3mdi3OfJzM050I630xx+rcwdze7vOw7uZcnUst33mNB+EzAPguj5sL2/MR947jNO8UgbtezMsenE5xL0QsDZe0N5izvWQzmv43iRuA/ZK4uRBlwZL3lzgJ05eLXozS/N2xvJ7lpr7it5brxkXcAOwV41aFKSpj1py8Vq6Rk+MWbL4OAMhi3IRbUq+6NfW3pfNKzzcnupL7rWa8iBuATvvi9uGfpyWrNYll/Pfaz9yIG4BeXZNbiE8yyclvTCP/XG01XMQNQKcdcXOTlxQxd43WBLcpbBZxA9BpxwuFtZcB7jMhfJvDZhE3AJ1i3IS/fMj7K5ObGD7/jE2eCkXEDUCnJG4z4dZUfJkg3n76iKVnpb0NiBuATnncLB+usFp/7XBTWrrKac5Fqr3y6Plb13pt+HsJACTquAGAAsQNgErEDYBKxA2ASsQNgErEDYBKxA2AQoP5B8iSjyFNM+vCAAAAAElFTkSuQmCC" InformativeScreenshot="ebc08de1f713090a9f5ee806769d7a0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Devolução de Cheques Depositados (Nossa Remessa)' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1180,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Inicial'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1180,216" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Text="[strDataOntem]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="636, 393, 203, 39" ElementType="InputBox" FriendlyName="'INPUT dp1689365544599'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;label&amp;gt;input' idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' class='date hasDatepicker' tag='INPUT' aaname='' /&gt;" Guid="4dedff7a-53b0-40dc-9453-abd7eadde32c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM8AAAArCAYAAADfVNzLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADESURBVHhe7dOxiYVQAADBK95K7MSGBBNBEDx+oHCB73Mbz8CWsD8XkJgHIvNA9Mwzz/M1TZOkQZ9Pbs88y7Jc67pKGvT55PZnnm3bJA16nWffd0mDXuc5jkPSoNd5zvOUNOh1HmDMPBCZByLzQGQeiMwDkXkgMg9E5oHIPBCZByLzQGQeiMwDkXkgMg9E5oHIPBCZByLzQGQeiMwDkXkgMg9E5oHIPBCZByLzQGQeiMwDkXkgMg9Er/NI+t7tmQf4j+v6BahnMFGlFXmqAAAAAElFTkSuQmCC" InformativeScreenshot="2098527a33d882d54fd6bba841ce4b08.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="636, 354, 239, 33" ElementType="Text" FriendlyName="'Data Inicial'" FullSelectorArgument="&lt;webctrl aaname='Data Inicial' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Data Inicial' tag='SPAN' type='' class='wrap' check:innerText='Data Inicial' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPMAAAAlCAYAAACXkd8NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAONSURBVHhe7drPa+JAHAXw/WtDIRSCBEpL0YVQkEK7IAuhILJ72OzBiwt1D70Ii6XEg1ByaC9ehLYUT6EIJbC8nTSTGDXGmLbYHd4HBjHON5lAnpNfn0BESmCYiRTBMBMpgmEmUgTDTKQIhplIEQwzkSIYZiJFMMxEimCYiRTBMBMpgmEmUgTDTKQIhplIEakwT9D7YkDXNGgLTa+YsL71MZ7KrhsInnz4ftimCOSysu7Pa8mY7KFcWMgITkXuz0kPvlyar0yN8NBFTY5RO9tokESvkgrzPbpVeRCuaodtjP7K7oWk12njtYd2+TAPYcf7UO2KURVRpkZgmGlLVoQ5FTz/Bk4q5I2rTebXjxJmcd5x68IduPA2OL0oU8Mw07asD7MQXDaSEGktTy5d47ELK66ZazV0H2SfDS2HeTZ75oebMzOpr1CYcdfBQXyAHkfXj5PBd9SrJsw9E/qO/G1Hh3lko38nOvgeOq0GLEP+ph2g3mqi2erAEytYW58hL8y1X2PcXzmo7+vJumo/PERzanYwJwPRv5q6TxBuv1qHcx3u4XJNcHuBxlE0ZkOXv2k6DFHT9uTszTDTlhQLc/oAlQf25Lcl+2a0ioPRS+HqdRarn5cXZi3+Q5hrJtovK8oI5nUTxlzfWbMH2TUQNYt9k7Zzil74H8Aw05aUDvOyKfoncX18Kp2zziVZ9fNyw2yI2XE4xlRc0o9+mqv7yfEPz+R3zYB96Wfcac8Ic4albTHMtCWlT7OnngOrIk9pl9r6MBern5cb5lTg1vcr8ieTse67HhrxaXxGY5hpm0reALvB9/hauNJAdxDd9XXqctnaMBetn7fdMPvoHcvvOxacP9GYL2zOzPQxrA9z5qOp1IFuu1G/Z1GfG+ZT9JMnPEXr571dmAHXlt+XTrMDBM/h52JNal8OO9G2Ah/DVk6YT/ryBhzR+1sR5hUteWlkjPb+bLluLr45Ngvj7No0buEfRfH6tLcMc94NsNp52GOxJoD7ddYnfCsuuQsv28u2nl00FpY3r8MxEL2vQmHOfJ0zff2oG7DOLjC6ja+tU2GcenA+x9eZOow9G/0nsbxofcpbhjmU+Whqz4J9lRVmIdyXI9lf9D04duA+ukm/aFvRY7farqzdNcXMz/mZ3l8qzET0P2OYiRTBMBMpgmEmUgTDTKQIhplIEQwzkSIYZiJFMMxEimCYiRTBMBMpAfgH0ViIaee6PTIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Final'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1180,216" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Text="[Now.ToString(&quot;yyyy-MM-dd&quot;)]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="890, 393, 203, 39" ElementType="InputBox" FriendlyName="'INPUT dp1689364458742'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;label&amp;gt;input' idx='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' class='date hasDatepicker' tag='INPUT' aaname='' /&gt;" Guid="8016b8ef-66b2-42e1-8291-725b39836d78" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM8AAAArCAYAAADfVNzLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADDSURBVHhe7dPBiYRAAADBDd5IzMSEBD+CIHj4ERaE2et3FXQI/bmAxDwQmQeiZ555nq9pmiQNul+5PfMsy3Kt6ypp0P3K7WuebdskDXqdZ993SYNe5zmOQ9Kg13nO85Q06HUeYMw8EJkHIvNAZB6IzAOReSAyD0Tmgcg8EJkHIvNAZB6IzAOReSAyD0Tmgcg8EJkHIvNAZB6IzAOReSAyD0Tmgcg8EJkHIvNAZB6IzAOReSAyD0Sv80j6rdszD/Af1/UHOyAtkwk1M38AAAAASUVORK5CYII=" InformativeScreenshot="fc4afb3cf6e2b63252af1f9ec632ac24.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="890, 354, 239, 33" ElementType="Text" FriendlyName="'Data Final'" FullSelectorArgument="&lt;webctrl aaname='Data Final' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Data Final' tag='SPAN' type='' class='wrap' check:innerText='Data Final' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPMAAAAlCAYAAACXkd8NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOnSURBVHhe7drda9pQGAbw/bVBCAWRwKgMHUghFOYgDEJBynrRFNbBvJiD9aKWIYyUIQwvOhi9EeoY7iaMQBHKs5PkJB5trNbaLTs8P3gvPDknH+CTnHw8ARFpgWEm0gTDTKQJhplIEwwzkSYYZiJNMMxEmmCYiTTBMBNpgmEm0gTDTKQJhplIEwwzkSYYZiJNzIR5fNpE2TRgGHNllmHtHKA3DGXPe5iECIIgrvBatj3A6NRBdev2PpoVC/aHERB00SwlbeXDSzlqc0bv69k23b5sJCqAmTCrf9TcKlVxfN989N1sfP29CNtD/Oigru7PXMXrV/vsbT5tDDMV1cIwZ3/UmwAXR0rIX/mYyEUr2WSYlXVZR4vOKiGGX3345z4ufsmmDWKYqaiWhzly3YMj241SCwPZvMxgX46Zr3WvmKucGHKuzP29B25XwTBTUa0WZozQfiYDYdjoBuJW+NsJnB0L1lNLuc82Ua7ZOB4k99bDsxZau1W5TNzDNhy09kXb2VCcIC5w4jTi8VbFzPqYlTrstwNxfc3x0DDX2hhe+fDEPpnyvtp87kHuLsbnB7BryTGly42SCWvHRe8q6cMwU1GtHOZOTf65jTo6P0TT11bW91aVmnHgYwsDOEArDUxONc/SFSiUdRlbSeiyetnFOOpzV5gXbM96k0zZxx8aucvjqniIejHMVFTrhznH5ZF1e/wqV9PUdw+W7Js7JVbDPF+1jthL4a4wG2XYb/oYhuKuf9m2YiF6L9KxyXEzzFRUa0+zcdWFsz2dHs/X0jDfjNB1ptPdW7UkzGtNs9UTUU6/cOChoUz5Z4thpmJb8wFYgO5u+rsB71Py9PjEXf3KHJzaWXvjsBeP9z+6K1+ZNx/mCxyU5e+Kg060P6I8W7YxzFRwy8Oc+2pKmXY/ayfT20mA/v7dYVZfJ023VUU7frg0QfCl9Q/D3Ieb/nb9pM+1OM47wtz8tMZHNESPZGGYcyv7aGQC/9W0Pfr6an66nIVZDY2sKIiTz860LfrCbP6rrr8e5iGOt9N+4pisMsx0eVzJ2Jn9juoer+qIHtNqYc77nDMcwNuRf/iSiequB/+nn13d1Clo9Ammlb6+2rJQfxedEUIMDhvZay1z24Z3Pobvyn5/PcyC+hxAHHNj7wSX39qoqmNvxD6+rk9fbVkuer+T4UT/0kyYiej/xTATaYJhJtIEw0ykCYaZSBMMM5EmGGYiTTDMRJpgmIk0wTATaYJhJtIC8Ad/TuNixMFbcAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Aplicar'" sap:VirtualizedContainerService.HintSize="1180,156" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="41, 479, 89, 42" FriendlyName="'Aplicar'" FullSelectorArgument="&lt;webctrl aaname='Aplicar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Aplicar' tag='SPAN' type='' class='wrap' check:innerText='Aplicar' /&gt;" Guid="01adb31d-a306-4669-a99f-9ac1b90d3b01" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAAuCAYAAABKxxWsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOrSURBVHhe7ZdBS+NAFMf3I+w36TdYv0Fvgh+gVw/Cwl7cU2/iQSh40Ut7Kgg5SNlDysIWWRZ1i3RpkSpCQGmpEAwEpaGl/53MTJJJTLvGlbzsMg/+0L55mdf+kvxn5h105B4aOkFo6AQRQl+rv9fKSRo6gTR0AmnoBNLQCaShE0hDJ5CGTiANnUAaOoE0dAJp6ATS0AmkoROIAHoJTXsqu7KY99A00uqya3/siDmdRnys34Pn5/1eap5I+UM3DnC18DtOYD/y1ri6LKXXZtRS6NdDkccQLTVPpNyhb1z2REP3GDuWJT7bB9hIqc2qpdCNMj6fVFD9Vn6TPn+rnKGXYNiin31bwdqJCf510YPxBhazFHrBlDP0mrQWB91z//s2utxsmcUMkrXBmG8JJVQHJqypshZ4Fn5cfIhd80d78TrYV/P1dTTvhnDnYjiM+RSuc4Q9XlNF58GCO5vCS9YtHIzGNXxS55S93PE21lqbMNj8tid+9+hG2Gi+0AfSWmZnaMhc416CtGuJ+gD6FPaTrJlNYD0MMZI3CrDQ+Rpdkw16fEH3Hod87lCjGrZ4XRVd1t+bMcDquCt7sbBvN5/18lwLNn/AWMz9a3to8wctZ+hNaS3e/W6U752JnQWzmPjOInoLsJigP6hEfmxEY9ymZD4T9MDa2E21rtfj9S/Uzt2Ez+CvT+IGMQW9WLiOCeN7/G30lSP0XfRnolfcSgLLmaLfU/MR2OC1VJUGOBP01Kc/o145b37Qgyfa9+jYollCS7KKvQEKdOtarZdK+XNZoC+tTRPb/ez8aqB9cxTXvXzSiwo99O5VoXh9YaCbDVjJBTQZxYReDa3FdZXFKBTbHfBRZjEXwTXFgF69lU/zjK05rcR4GuDCQL8IrIXtNsyU8XoZHUEd3qQqc6uh742eQ8sC/SVwfK28OUWGfjiR1qKu8gltBadTZjGHPKcupIkdgLp7uYu2ayGgZJ80EC/cvYQ3NzZnCVs/jzEKbKd40BV4VjllXMpkf4JXPT848WB7XdsRdrRsnx6eA1gIGzPR8BftVBCr9+m2x07Jfl34lkbWaMuE9zQRY4WDft6Rfr3MWgJFFsNPc+rNGh2hzw4jXnDYYOFNh2ifJvfA7IQ5tqK6OTu1nrL8UhArTqSuieYXv6aEvZt4jd+7e/URlTpbZHmiaNBfrQh66kL6D0tDJ5CGTiANnUAFhv7/SkMnkIZOIA2dQBo6gTR0AmnoBNLQCaShEyiEriOvAH4Dx9gch5SoaHIAAAAASUVORK5CYII=" InformativeScreenshot="e2735fe6ba29a880538e70ade848cea5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Cheques Sua Remessa'" sap:VirtualizedContainerService.HintSize="1180,1179" sap2010:WorkflowViewState.IdRef="NCheckState_22" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Timeout="60" Version="V1">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="476,963" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="199, 292, 45, 33" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;span&amp;gt;span' idx='4' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='icon' isleaf='1' tag='SPAN' aaname='' /&gt;" Guid="4cc671b5-3dbf-464d-b90e-396d12070374" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAlCAYAAADr2wGRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANgSURBVFhH7ZhXSyRBFEb31xoezIgKKuqDGB8EE2IWIyKKASMqihjArJhznh9xl3OhmpnZWnus2ZF2mYcDQ1dX3f6qbqr5FQqF5KeTFBEUkiKCQkwi3t7e5OHhQe7v7+Xu7s4Z5gPrfXx8WG254CsCg7e3t7K6uiqzs7MyNTXlzMzMjMzPz8vp6am8vr5a7bngK+Ly8lJWVlakqalJampqpKqqKi5qa2tlenpaTk5OrPZc8BWxu7srfX19kp2dLbm5uVJcXOxMfn6+pKamSmtrq6yvr1vtueArYnt7Wzo7OyUrK0t6e3t1B10ZHx9XEY2NjeqeNnsu+IrY2tqSjo4OPYmxsTHrO7GyvLwcLBE3NzfW3Y6GmDJzAididHTU6vfRdHV1yfv7u84JnIjJyUlr9olmYGAguCI2NjZkeHjYl6WlJa+wMaekpESz3ebmprdWvHyriMfHR42Tq6sreXp68taKl291J6q/aTvMOv+Cbw1s+q+DgwO5uLhQMWateHEW4ZJiz87OZGJiQkZGRrSVMeLiJSExsbi4aHWZ4+NjHa+vr9dejPc4lXjFOIvA13NycqyQQulSr6+vI05lbW1NW5iCggJ9r7q6WgOfQEeIa3vuLAJ34INsEPScxODgoJSVlXkQI3l5eZKenq5kZmZKZWWl9lTcN1wDPiHutLCwoB/U0tIiaWlpEVDsUlJSPFi3rq5O5ubm9ETCbZOSsU/rThzZYCyhJ9Hc3BzxwTY4EQogWYzLUrht3JG1cLuMjIw/NoRnjCU0JvxE8CGFhYXS3d2tMfP8/Bxhm43gVkk6r6ioUMFGAL95xlhC3MlkJ05raGjIg3WIAdYiHjiB/v5+bUEQ/bfA3tvb0/kIZveB3zxj7EsiCNToy/9nsIsUNVoMRJFiWaO8vFwDvaenR46OjnTMZtvA+P7+vt4ITRHlN88Y8xXBza69vV1FNDQ0WP8A+AxOhd1CjKkTbW1t6gYUwpeXF6vdaNgIBCPciDf9l68I2gQMkxqLioqs/dFnsGNkHooa2QcXo14cHh5+qS7wLi63s7OjhLufrwh2i3sA/1KUlpZ6xxkrVGcyzPn5ue46QvgAmy1XfEVgEFeg78EdwitwLDCP+DA7hw9/5QRiwVfETyApIigkRQSF/0BESH4Ddf+xH6IJhOQAAAAASUVORK5CYII=" InformativeScreenshot="6803476953b7624ff0814205556e961e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Como Excel'" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="200, 424, 284, 45" ElementType="Text" FriendlyName="'Como Excel'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;p' idx='6' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='wrap button pressed over' tag='P' aaname='Como Excel' check:innerText='Como Excel' /&gt;" Guid="f1cc3621-36a9-4992-b16a-742497524558" ImageBase64="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" InformativeScreenshot="5de0ed40d8257e5c41b597b1bd6a2ee5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                    <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="761, 582, 132, 39" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' check:text='unchecked' /&gt;" Guid="81d99196-2899-401c-ab60-91e999bda3ea" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIgAAAArCAYAAACjMsASAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVHhe7dfNcYMwEEBhelI3VJIbragVqsjZHdCBYpAwkryssbEzeHmHbyb8RM5EDwk3wzAEYA2BQEUgUBWBND+/AIFAVzRRHKQbLpcLTohAoCIQqAgEKgKBikCgIhCoCAQqAoGKQKAiEIFvm9C4LvTCtbMxFkgfOned3Kbkul64dx2BLOwE4ls5hut5AnmdkUDSytF64drzCGRhJBAf2nE7IZC3MxJImtTGha6Xry+E95QqrDyQ9VjSOLdrT4ybtsNviNBMILdV5NE//u6dJP5efq6IIk1m6+f7k74LLj+/ddzx73vTSvcfDAUS9Z2LkzDa+ITWq0R5LL/fTJ/zYHxx3KYNPrvn6MwFMltCkbYdYTtYDWQeK5/Y+9Uhem7cb2A2kChtO3dPsbKlCMfSdlKvBC+N+wWMB1I9/fVEJ1smMj83/ZxvOTvGPTrzgUyTogZSfxtZmchp1bhuV34co9q29ox7cEYCGbcS4eUvfQNZlv205WRPfwxoy0TGCXdOejndM+6xGQokTUhBeEFNT/t8zxhPPXFrEzm/+NZbyWTHuEdmJBB8CoFARSBQEQhUBAIVgUBFIFARCFQEAtXmQHBuRRPFgXAzzqdoIj8AagQCFYFAMYQ/HP+8HuHBgNwAAAAASUVORK5CYII=" InformativeScreenshot="fa023e56b5334b5201b31eaeea4b87bf.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:08" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Downloads\Cheques_Sua_Remessa.xls&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="650,611" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'O relatório está vazio.'" sap:VirtualizedContainerService.HintSize="608,371" sap2010:WorkflowViewState.IdRef="NCheckState_24" ScopeIdentifier="bb241565-29cf-4eae-b2a3-f7f2cf6e7e34" Version="V1">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="304,155" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[bRelVazio]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FDevolu%C3%A7%C3%A3o_de_Cheques_Depositados&amp;standAlone=true" DesignTimeRectangle="729, 680, 680, 20" ElementType="Text" FriendlyName="'O relatório está vazio.'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='P' class='message' aaname='O relatório está vazio.' check:innerText='O relatório está vazio.' /&gt;" Guid="0ca83d7a-e1ff-4ed7-b4ae-273d2f1f08a0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAqwAAAAYCAYAAAA/Bq96AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQMSURBVHhe7dthbuIwEIbhvRPnWq6CehN6kqrHqMQdsiQZh/F4xnFYQE55H8k/GhyP7SD1w6V/BgAAAKBjBFYAAAB0jcAKAACArhFYAQAA0DUCKwAAALr23oH16zQcDofh8Pc8XOTS2/g5D8d3XTsAANiVjgPr93AaA9XHt/z8aJfh/Pd9A9v3B2EVAADsgx9Y0+lb1o7D+Udef4n7A+sUxg6n6wgV0+nqSh+XzKvHsCfP7fi5MrNp7a9+nlt0vMcAAODlisA6h70y9Fw+j9P15514Wk8OrHf7BYG1ewRWAABwkwdW+U5nGHjWXn+oXgNrx35NYAUAALhRgbXlO52t3/tUYVN/vUDfl/7haWk2YDqBtbhnbqcvef0qnRDnLf/zd9HHhmId/HTNqV8UpOW6anpe6xru13spbQmnzmtTk3kuJ+RZa/laQO2Z56811Qie4dzSe+BZewwAAPboFlhT4ClCQm4Oe2tBRwULJ+h4Y8xhR19zQssYduz8JACVodU7YfXCl9TR13T4i0KTvq4DbiLzajrt9PraMSs1lrV7fcS4v/Z6uecBZ48npt7dNYr1P2GPAQDAbhWBde2X/xxA1k62nMCRSJ3yfntPZYyMhFDVLwqsYXiya6/uhZ1XfALZFgjL+Sd6HbW5nxsCq29ey3p//1nMc/I+GGgrNWTO7oeIh+0xAADYs5cH1lrImQLaEkqiMeS6bapfFFjz8TVTa1NgnX92+0Ynk5rUcvtM90sYk7GqAXHtGaZwaNraMx+VwTB4PptqpGdp1/TgPQYAALv23K8EOGPN91daJbCmsJyP23rCGp/SFa9Vg5+ZV61vdRyxBNGoqb32+uq9qNRL+56/VgmClh1bh2mxtUb8XnrwHgMAgF17/j9dGbUT1pwdIxqzNbDKdXfuGwJSMC+3b8vpn9S654SwCIjRvMP1VObuuO2f8z7YWCN9+PBrP3iPAQDArqnAeiW//MMA0xwObOBQ7h0jDERlYI1CcflnbWHHDmuN7NriEB/Wy1T2Srl8nov1lPfOPxfzDvc86B9J41znMu5PNt6WGtI3XrNd1//uMQAA2LM8sF4Vp3YinYitBauZDRy5VKMIN2OQMeGrHlrkmq0VhqfUX4dZqdN0Wjhy1ib9vTk0hcEwwI215rm6waxYZxTsvOch11rnOFH7XXwgaK0h15zweeOM1bzHqWb5gQUAAOxTEVgnKRxkbcsplhdejBTSwhreGDowpf5yzdRaAnYx7nVkCcxLs/PcGlgnKSjdWhmYa8r7x6bnUMzbfSZmnGWedvwx0M3X2gPrbV+re1OpkT8X29J6ZJy79jj1IbACAPBb+IEVAAAA6ASBFQAAAF0jsAIAAKBrBFYAAAB0jcAKAACAjg3DP+lusQvqUty1AAAAAElFTkSuQmCC" InformativeScreenshot="94b77b92f69df4acc1a10e0281cf9acb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Devolução de Cheques Depositados (Nossa Remessa)' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="608,106" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Cheques Sua Remessa vazio às &quot;+Now.ToString(&quot;HH:mm:ss&quot;)]" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="https://jasperserver.sicredi.in/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2FRelat%C3%B3rios%2FCheques&amp;reportUnit=%2FRelat%C3%B3rios%2FCheques%2FCheques_Sua_Remessa&amp;standAlone=true" DesignTimeRectangle="1090, 571, 228, 26" ElementType="Text" FriendlyName="'Cheques Sua Remessa'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Cheques Sua Remessa' check:innerText='Cheques Sua Remessa' /&gt;" Guid="93f8ba0f-cb60-4660-b5ce-4705e81c3bc2" ImageBase64="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" InformativeScreenshot="a5aa2dd9a87c913cd5ba88b3a7d1c286.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Cheques Sicredi Compensados/Criticados' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 754" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFHSURBVDhPbdO/K8VhFMfxrx91y86ILCZ/AAYpyWCSUUbFzaBE3UgkDFYmxSpSJrn5NYiUDDIoiQw2P2Ly2/tznafO/XpOver7nPOc0/P93ucm6WiYPqpCLxaxiTXMoxMZ2/Y/KJZgCA/4iXjGIdqspTgoLNvGGA09xz2+0G9tf0Eih1ijvGEbl7iw3CdaQ3MNnqwQswI1ruPVcpIPA/TevsFbwBby0Cl87R2NGrDhkt4oNOAOw9Cx03sGNOA4lXxEN2bwjR6cwu8JJjXgxCV03FrM2boPE/YcM6UBu7iFLkoFdHFUHEMLYkcPBjWgDqVowjVUmEUlbmwd84FmDSiHv0Qjltt3uZgDlIWfcgea2GXrVcSaAn3c9kKzgoU+XL09LyHW5OUKjemgkE1tTHtB8f/AB8UMOqDrewZ9xCvsYRzVttUiSX4BXUPkGFL0Z7UAAAAASUVORK5CYII=" InformativeScreenshot="cff603cde48880f65d4a4074a3e9ff29.png" Selector="&lt;html app='chrome.exe' title='TIBCO Jaspersoft: Login' /&gt;" Url="https://jasperserver.sicredi.in/jasperserver/login.html" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </FlowStep>
+    <FlowStep x:Name="__ReferenceID1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">199.895,317.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">299.895,368.5 299.895,398.5 300,398.5 300,414.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[strDataOntem]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <FlowStep.Next>
+        <x:Reference>__ReferenceID0</x:Reference>
+      </FlowStep.Next>
+    </FlowStep>
+    <FlowStep x:Name="__ReferenceID3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,185.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,22</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,207.5 299.895,207.5 299.895,227.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <unaa:GetPreviousWorkingDay ReferenceDate="{x:Null}" CountryCode="BR" DisplayName="Get Previous Working Day" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetPreviousWorkingDay_1" PreviousWorkingDay="[DataOntem]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </unaa:GetPreviousWorkingDay>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">168.895,227.5</av:Point>
+              <av:Size x:Key="ShapeSize">262,60</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">299.895,287.5 299.895,317.5</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[strDataOntem]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[DataOntem.ToString("yyyy-MM-dd")]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+          <FlowStep.Next>
+            <x:Reference>__ReferenceID1</x:Reference>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <FlowStep x:Name="__ReferenceID4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,97.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,148.5 300,185.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Delete ResourceFile="{x:Null}" ContinueOnError="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Downloads\Cheques_Sua_Remessa.xls&quot;]" />
+      <FlowStep.Next>
+        <x:Reference>__ReferenceID3</x:Reference>
+      </FlowStep.Next>
+    </FlowStep>
+  </Flowchart>
+</Activity>

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SESuite" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1526,906" sap2010:WorkflowViewState.IdRef="SESuite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SESuite" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1527,908" sap2010:WorkflowViewState.IdRef="SESuite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -80,7 +80,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="SESuite" sap:VirtualizedContainerService.HintSize="994,841.333333333333" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="SESuite" sap:VirtualizedContainerService.HintSize="994,843" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtAG" />
       <Variable x:TypeArguments="x:Boolean" Name="bErro" />
@@ -89,7 +89,7 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,117.5</av:PointCollection>
         <x:Double x:Key="Width">960</x:Double>
         <x:Double x:Key="Height">805.5</x:Double>
@@ -102,10 +102,10 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,454.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Edge: Inicialização (WF003) - Workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" ScopeGuid="c0262437-e990-4ed0-b9dc-d5a78fb9a27d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Edge: Inicialização (WF003) - Workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" ScopeGuid="c0262437-e990-4ed0-b9dc-d5a78fb9a27d" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -797,11 +797,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,117.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">300,168.5 300,224.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques\AG SESuite.xlsx&quot;]">
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques\AG SESuite.xlsx&quot;]">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -834,23 +834,23 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,224.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+              <av:Size x:Key="ShapeSize">219,52</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">300,275.5 300,325.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtAG]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtAG]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="826,864" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="R" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="772,728" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="792,748" sap2010:WorkflowViewState.IdRef="Sequence_36">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Flowchart sap:VirtualizedContainerService.HintSize="730,636" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+                  <Flowchart sap:VirtualizedContainerService.HintSize="730,637" sap2010:WorkflowViewState.IdRef="Flowchart_3">
                     <Flowchart.Variables>
                       <Variable x:TypeArguments="x:String" Name="strAG" />
                     </Flowchart.Variables>
@@ -859,7 +859,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <av:Point x:Key="ShapeLocation">510,2.5</av:Point>
-                        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+                        <av:Size x:Key="ShapeSize">60,75</av:Size>
                         <av:PointCollection x:Key="ConnectorLocation">540,77.5 540,107.5</av:PointCollection>
                         <x:Double x:Key="Width">695.94959153966215</x:Double>
                       </scg:Dictionary>
@@ -871,11 +871,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">440,197.5</av:Point>
-                          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                          <av:Size x:Key="ShapeSize">200,52</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">540,249.5 540,279.5 540.141666666667,279.5 540.141666666667,309.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Inicialização (WF003) - Workflow" sap:VirtualizedContainerService.HintSize="971.333333333333,1535.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="Simulate" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="c0262437-e990-4ed0-b9dc-d5a78fb9a27d" Version="V2" WindowResize="Maximize">
+                      <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Inicialização (WF003) - Workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="Simulate" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="c0262437-e990-4ed0-b9dc-d5a78fb9a27d" Version="V2" WindowResize="Maximize">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -929,13 +929,13 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Flowchart sap:VirtualizedContainerService.HintSize="654,936" sap2010:WorkflowViewState.IdRef="Flowchart_6">
+                                          <Flowchart sap:VirtualizedContainerService.HintSize="654,937" sap2010:WorkflowViewState.IdRef="Flowchart_6">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-                                                <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+                                                <av:Size x:Key="ShapeSize">60,75</av:Size>
                                                 <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
                                                 <x:Double x:Key="Width">620</x:Double>
                                                 <x:Double x:Key="Height">900</x:Double>
@@ -948,11 +948,11 @@
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
-                                                  <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                  <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                   <av:PointCollection x:Key="ConnectorLocation">300,179.5 300,228.5</av:PointCollection>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Agência'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Timeout="40" Version="V1">
+                                              <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Agência'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Timeout="40" Version="V1">
                                                 <uix:NCheckState.IfExists>
                                                   <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                     <sap:WorkflowViewStateService.ViewState>
@@ -991,11 +991,11 @@
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <av:Point x:Key="ShapeLocation">200,228.5</av:Point>
-                                                      <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                      <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                       <av:PointCollection x:Key="ConnectorLocation">300,280.5 300,329.5</av:PointCollection>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <uix:NSelectItem DisplayName="Select Item 'Agência'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[strAG]" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Version="V1">
+                                                  <uix:NSelectItem DisplayName="Select Item 'Agência'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[strAG]" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Version="V1">
                                                     <uix:NSelectItem.Items>
                                                       <scg:List x:TypeArguments="x:String" Capacity="34">
                                                         <x:String></x:String>
@@ -1054,11 +1054,11 @@
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <av:Point x:Key="ShapeLocation">200,329.5</av:Point>
-                                                          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                          <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                           <av:PointCollection x:Key="ConnectorLocation">300,381.5 300,430.5</av:PointCollection>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtAGLegado]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_9" SheetName="Worksheet" WorkbookPath="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques\&quot;+strAG+&quot;.xlsx&quot;]">
+                                                      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtAGLegado]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ReadRange_9" SheetName="Worksheet" WorkbookPath="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques\&quot;+strAG+&quot;.xlsx&quot;]">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1070,11 +1070,11 @@
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <av:Point x:Key="ShapeLocation">200,430.5</av:Point>
-                                                              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                              <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                               <av:PointCollection x:Key="ConnectorLocation">300,482.5 300,531.5</av:PointCollection>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtAGDigital]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_10" SheetName="Worksheet" WorkbookPath="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques\&quot;+strAG+&quot;_digital.xlsx&quot;]">
+                                                          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtAGDigital]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ReadRange_10" SheetName="Worksheet" WorkbookPath="[&quot;C:\Users\&quot;+System.Environment.UserName+&quot;\Sicredi\01.0821 Sede Univales - Documentos\General\sidi_relatorios\Tratamento de Cheques\&quot;+strAG+&quot;_digital.xlsx&quot;]">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1086,11 +1086,11 @@
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <av:Point x:Key="ShapeLocation">200,531.5</av:Point>
-                                                                  <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                                  <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                                   <av:PointCollection x:Key="ConnectorLocation">300,584.166666666667 300,632.5</av:PointCollection>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
-                                                              <If Condition="[dtAGLegado.Rows.Count&lt;&gt;0]" DisplayName="If Legado Vazia" sap:VirtualizedContainerService.HintSize="512.666666666667,1838" sap2010:WorkflowViewState.IdRef="If_8">
+                                                              <If Condition="[dtAGLegado.Rows.Count&lt;&gt;0]" DisplayName="If Legado Vazia" sap:VirtualizedContainerService.HintSize="532,1847" sap2010:WorkflowViewState.IdRef="If_8">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1098,24 +1098,24 @@
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                 <If.Then>
-                                                                  <Sequence sap:VirtualizedContainerService.HintSize="476,1643.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="496,1659" sap2010:WorkflowViewState.IdRef="Sequence_57">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON field_btimportta…'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_47" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Version="V1">
+                                                                    <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON field_btimportta…'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_47" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Version="V1">
                                                                       <uix:NClick.Target>
-                                                                        <uix:TargetAnchorable BrowserURL="https://sesuite.sicredi.com.br/se/v58515/form/efms_exec_html/form_application.php" DesignTimeRectangle="554, 693, 204, 51" ElementType="Button" FriendlyName="'BUTTON field_btimportta…'" FullSelectorArgument="&lt;webctrl id='ribbonFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='panel_navigation_form_affede8f07a5a259c9547ac98c181416' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='IFRAME' /&gt;&lt;webctrl id='field_btimporttabela' tag='BUTTON' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl id='ribbonFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='panel_navigation_form_affede8f07a5a259c9547ac98c181416' tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='field_btimporttabela' tag='BUTTON' type='button' class='' aaname='                                               ' /&gt;" Guid="fd439c2e-a7d7-4d1f-974d-835de90bef94" ImageBase64="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" InformativeScreenshot="a17d13aea5a7173e9b9d0e32305710b8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='stealth_window_58' title='Execução de atividade' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" />
+                                                                        <uix:TargetAnchorable Accuracy="1" BrowserURL="https://sesuite.sicredi.com.br/se/v58515/form/efms_exec_html/form_application.php" DesignTimeRectangle="554, 639, 204, 51" ElementType="Button" FriendlyName="'BUTTON field_btimportta…'" FullSelectorArgument="&lt;webctrl id='ribbonFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='panel_navigation_form_d61972ccab9593417bc69bb9360177d5' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='IFRAME' /&gt;&lt;webctrl id='field_btimporttabela' tag='BUTTON' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl id='ribbonFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='panel_navigation_form_d61972ccab9593417bc69bb9360177d5' tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='field_btimporttabela' tag='BUTTON' type='button' class='' aaname='                                               ' /&gt;" Guid="048d4861-cf9a-4aa6-8551-677fb9a8314e" ImageBase64="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" InformativeScreenshot="aa3af78da86745f9fcc9684654bcd148.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='stealth_window_12' title='Execução de atividade' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" />
                                                                       </uix:NClick.Target>
                                                                     </uix:NClick>
-                                                                    <Delay DisplayName="Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_19" />
-                                                                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_48" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Version="V1">
+                                                                    <Delay DisplayName="Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                                                                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_48" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fcebb28d-5f05-4ede-84d8-1ca923e57e91" Version="V1">
                                                                       <uix:NClick.Target>
                                                                         <uix:TargetAnchorable BrowserURL="https://sesuite.sicredi.com.br/se/v12244/form/efms_exec_html/efms_import_spreadsheet_data.php" DesignTimeRectangle="1226, 561, 42, 33" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl id='importSpreasheetFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='formImport' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='importSpreasheetFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='formImport' tag='SPAN' type='' class='seicon-file-content' aaname='' /&gt;" Guid="11ef3964-fe24-4bdc-94b6-b20c12202a36" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAlCAYAAAA9ftv0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFiSURBVFhH7ZixqoMwFIbvOznY0dlBEAoFH0DcfAgX8U20FArd3FycBF10c3A0oq9wLkcomEtMm8qNFTJ8S5Lz+xlODPgzTRMciXEcoe97OJw4QghR4lJR4rIRFm/bFjzPA03ThNF1HXzfh7qumdkiCItXVQWmacLpdILL5QKO47zkfD7P0s8XsCwLiqJg5r/Lx+JRFDHnWTxrwjCE6/UKhmFslpcqjjV4eaRpulleuvhzLMuyeQzl8zyn1r/DbuII7jaKfyIvVTwIAhiGgZory3IWd10Xuq6j5nhIEW+aBmzbpj6Nf8FMzGbVs5AijgcySZL5QLKkka8UfwVmKfE11sTv9zt1O66Ba+I4pmp3FX88HszrnsXtdqNqdxXfghLnsSauenwxzkO1isiO49pl7a7i2LeH7PEtKHEeSnyBVHGR3xM8MAOz/l18yw8hHpiJ2axnshAW/xaUuGyUuGwIIfAL9K9DJdxNjhQAAAAASUVORK5CYII=" InformativeScreenshot="45f71aefb1a70292c29d4368e707ad58.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='stealth_window_87' title='Execução de atividade' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" WaitForReadyArgument="Complete" />
                                                                       </uix:NClick.Target>
                                                                     </uix:NClick>
-                                                                    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Abrir" sap:VirtualizedContainerService.HintSize="434,806.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" OpenMode="Never" ScopeGuid="d0f9aa2c-1424-4090-addd-bc70a41f31c6" Version="V2">
+                                                                    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Abrir" sap:VirtualizedContainerService.HintSize="434,802" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" OpenMode="Never" ScopeGuid="d0f9aa2c-1424-4090-addd-bc70a41f31c6" Version="V2">
                                                                       <uix:NApplicationCard.Body>
                                                                         <ActivityAction x:TypeArguments="x:Object">
                                                                           <ActivityAction.Argument>
@@ -1195,7 +1195,7 @@
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <av:Point x:Key="ShapeLocation">200,632.5</av:Point>
-                                                                      <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                                      <av:Size x:Key="ShapeSize">200,53</av:Size>
                                                                       <av:PointCollection x:Key="ConnectorLocation">300,685.166666666667 300,733.5</av:PointCollection>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
@@ -1303,7 +1303,7 @@
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <av:Point x:Key="ShapeLocation">200,733.5</av:Point>
-                                                                          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                                                          <av:Size x:Key="ShapeSize">200,53</av:Size>
                                                                           <av:PointCollection x:Key="ConnectorLocation">300,786.166666666667 300,834.5</av:PointCollection>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
@@ -1834,12 +1834,12 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NApplicationCard>
                       <FlowStep.Next>
-                        <FlowDecision x:Name="__ReferenceID31" Condition="[bErro]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.6666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                        <FlowDecision x:Name="__ReferenceID31" Condition="[bErro]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <av:Point x:Key="ShapeLocation">500.641666666667,309.5</av:Point>
-                              <av:Size x:Key="ShapeSize">78.6666666666667,86.6666666666667</av:Size>
+                              <av:Size x:Key="ShapeSize">79,87</av:Size>
                               <av:PointCollection x:Key="TrueConnector">500.641666666667,353 460.641666666667,353</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -1848,11 +1848,11 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">260.641666666667,342</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,22</av:Size>
+                                  <av:Size x:Key="ShapeSize">200,25</av:Size>
                                   <av:PointCollection x:Key="ConnectorLocation">260.641666666667,353 240,353 240,359.02</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_17">
+                              <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Delay_17">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1864,11 +1864,11 @@
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <av:Point x:Key="ShapeLocation">40,333.02</av:Point>
-                                      <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                                      <av:Size x:Key="ShapeSize">200,52</av:Size>
                                       <av:PointCollection x:Key="ConnectorLocation">140,333.02 140,260</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="msedge">
+                                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="msedge">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1880,11 +1880,11 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">9,200</av:Point>
-                                          <av:Size x:Key="ShapeSize">262,62</av:Size>
+                                          <av:Size x:Key="ShapeSize">262,61</av:Size>
                                           <av:PointCollection x:Key="ConnectorLocation">271,230 301,230 301,223.5 440,223.5</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_7">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Boolean">[bErro]</OutArgument>
                                         </Assign.To>
@@ -1911,11 +1911,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">409,107.5</av:Point>
-                          <av:Size x:Key="ShapeSize">262,62</av:Size>
+                          <av:Size x:Key="ShapeSize">262,61</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">540,167.5 540,197.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_8">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strAG]</OutArgument>
                         </Assign.To>
@@ -1943,10 +1943,10 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">200,325.5</av:Point>
-                  <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                  <av:Size x:Key="ShapeSize">200,52</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Pesquisa &gt; &quot;6694638&quot;" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="e670f0a6-1e85-4140-877f-a89417a2669c" Version="V2">
+              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Pesquisa &gt; &quot;6694638&quot;" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="e670f0a6-1e85-4140-877f-a89417a2669c" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
